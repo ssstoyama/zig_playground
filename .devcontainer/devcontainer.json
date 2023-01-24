@@ -8,7 +8,16 @@
 	},
 	"runArgs": [
 		"--privileged"
-	]
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"lorenzopirro.zig-snippets",
+				"tiehuis.zig",
+				"eamodio.gitlens"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

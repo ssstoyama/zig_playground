@@ -13,11 +13,13 @@ RUN apt update && apt install -y \
 RUN curl https://ziglang.org/builds/${zigv}.tar.xz \
   | tar -Jxvf -
 
-
 # Package
 FROM alpine:latest AS target
 
 ARG zigv
+
+RUN apk add  --no-cache \
+    git
 
 COPY --from=builder /tmp/${zigv} /usr/local/bin/${zigv}
 RUN ln -s /usr/local/bin/${zigv}/zig /usr/local/bin/zig
