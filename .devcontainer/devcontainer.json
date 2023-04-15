@@ -12,9 +12,11 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"tiehuis.zig",
 				"eamodio.gitlens",
-				"AugusteRame.zls-vscode"
+				"ziglang.vscode-zig",
+				"streetsidesoftware.code-spell-checker",
+				"GitHub.copilot",
+				"GitHub.copilot-labs"
 			]
 		}
 	}
